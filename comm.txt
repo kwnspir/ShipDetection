@@ -1,0 +1,10 @@
+/home/kayn/opencv_kayn/opencv-3.4.0/build/bin/opencv_createsamples -info pos2.new -num 1000 -w 20 -h 20 -vec positive.vec
+
+/home/kayn/opencv_kayn/opencv-3.4.0/build/bin/opencv_traincascade -data data -vec positive.vec -bg neg.new -numPos 850 -numNeg 3000 -numStages 20 -numThreads 2 -maxFalseAlarmRate 0.0001 -miniHitRate 0.9999
+
+
+
+1 ===> more is strict
+2 ===> more is strict
+3 ===> more is strict
+4 ===> less is strict
